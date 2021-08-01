@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
 :root {
     font-size: 16px;
     font-family: 'Open Sans';
@@ -10,12 +12,12 @@
   html{
     scroll-behavior: smooth;
   }
-  #projectid{
+  /* #projectid{
     background: url(images/trianglify-lowres.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-  }
+  } */
 
   #pathtext > p{
     left:150px;
@@ -317,41 +319,78 @@
   .overlay{
     z-index: 9;
   }
-  .boxes {
+  .accordion {
+    max-width: 990px;
+    background: rgba(0, 0, 0, 0.10);
+    height: 300px;
+    margin: 20px auto;
     display: flex;
-    width: 100%;
-    padding: 4% 2%;
-    box-sizing: border-box;
-    height: 100vh;
-  }
-  
-  .box {
-    flex: 1;
-    overflow: hidden;
-    transition: .5s;
-    margin: 0 2%;
-    box-shadow: 0 20px 30px rgba(0,0,0,.1);
-    line-height: 0;
-  }
-  
-  .box > img {
-    width: 200%;
-    height: calc(100% - 10vh);
-    object-fit: cover; 
-    transition: .5s;
-  }
-  
-  .box > span {
-    font-size: 3.8vh;
-    display: block;
-    text-align: center;
-    height: 10vh;
-    line-height: 2.6;
-  }
-  
-  .box:hover { flex: 1 1 50%; }
-  .box:hover > img {
-    width: 100%;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+    flex-direction: row;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.box {
+    position: relative;
     height: 100%;
+    flex: 1;
+    background-position: left;
+    background-size: cover;
+    transition: .7s;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+}
+.box:hover{
+    flex: 7;
+    height: 400px;
+}
+.a1 {
+    background-image: url("https://images.pexels.com/photos/1516654/pexels-photo-1516654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.a2 {
+    background-image: url("https://images.pexels.com/photos/1056555/pexels-photo-1056555.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+}
+.a3 {
+    background-image: url("https://images.pexels.com/photos/129207/pexels-photo-129207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    color: #fff;
+}
+.a4 {
+    background-image: url("https://images.pexels.com/photos/240038/pexels-photo-240038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    color: #fff;
+}
+.a5 {
+    background-image: url("https://images.pexels.com/photos/220994/pexels-photo-220994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); 
+}
+p {
+  font-weight: normal;
+  font-family: 'Exo 2', sans-serif;
+}
+.text {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  padding: 10px;
+}
+.box:hover .text{
+  opacity:1;
+}
+h1 {
+  width: 250px;
+  text-align: center;
+  margin: 100px auto 20px auto;
+}
+@media screen and (max-width: 800px){
+  body{
+      margin: 0;
   }
-   
+  .accordion {
+      flex-direction: column;
+      height: 700px;
+      box-shadow: none;
+  }
+  .box {
+      box-shadow: none;
+  }
+  .box:hover {
+      flex: 7;
+  }
+}
