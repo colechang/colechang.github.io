@@ -1,20 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 :root {
     font-size: 16px;
     font-family: 'Open Sans';
     --text-primary: #ffffff;
-    --text-secondary: #d10000;
-    --bg-primary: #000000;
+    --text-secondary: #2b5392;
+    --bg-primary: #ebc072;
     --bg-secondary: #f37021;
     --transition-speed: 600ms;
   }
   html{
     scroll-behavior: smooth;
+    
   }
    #projectid{
-     width: 20%;
-     height: 20%;
+     width: 5%;
+     height: 5%;
+     display: flex;
+  
   }
   
 /*.banner{
@@ -265,9 +271,16 @@
   .navbarx {
     position: fixed;
     background-color: var(--bg-primary);
+    
     transition: width 600ms ease;
     overflow: hidden;
+    font-family: "jost";
+    
 
+  }
+  .navbarx a{
+    
+    text-decoration: none;
   }
   
   .navbar-navx {
@@ -282,6 +295,7 @@
   
   .nav-itemx {
     width: 100%;
+    text-decoration: none;
   }
   
   .nav-itemx:last-child {
@@ -307,6 +321,7 @@
   .link-textx {
     display: none;
     margin-left: 1rem;
+    text-decoration: none;
   }
   
   .nav-linkx svg {
@@ -699,6 +714,7 @@ i {
   font-weight: bold;
   position: relative;
   width: 100%;
+  font-family: "jost";
 }
 .card--container .cardy a {
   padding: 30px;
@@ -771,16 +787,55 @@ i {
 #gamecontroller{
   color: white;
 }
-.grid{
+
+.verticalCenter {
   display: flex;
-  padding-left: 80px;
-  display: inline-flex;
-  flex-direction: row;
-  margin: 0%;
-  max-width: 2000px;
+  align-items: center;
+  justify-content: center;
+
 }
-#project4{
-  width:1000px;
-  
- 
+.subtitleText {
+  font-family: 'Jost';
+  font-size: 18px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
+
+.bodyText {
+  font-family: 'Jost';
+  font-size: 20px;
+  overflow-wrap: break-word;
+  font-weight: bold;
+}
+.icons{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.grid{
+  position: relative; /* or absolute */
+  top: 50%;
+  left: 10%;
+}
+.contact{
+  margin: 0 auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-family: "jost";
+}
+#contactHeader{
+  padding-left: 13%;
+  font-family: "jost";
+  padding-top: 30px;
+  font-size: 30px;
+}
+#projectHeader{
+  padding-left: 13%;
+  font-family: "jost";
+  font-size: 30px;
+}
+
+
