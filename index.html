@@ -6,10 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Cole Chang Portfolio </title>
-
-  <script src="main.js"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
   <link href="images/CCedited.png" rel="shortcut icon" type="image/x-icon">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -19,7 +16,7 @@
 </head>
 
 <body>
-  <a name="top"></a>
+  <a name="top" style="text-align: center;"></a>
   <!-- Navbar -->
   <nav class="navbarx overlay">
     <ul class="navbar-navx">
@@ -82,7 +79,7 @@
       </li>
 
       <li class="nav-itemx">
-        <a href="#future" class="nav-linkx" style="text-decoration: none;">
+        <a href="#futureid" class="nav-linkx" style="text-decoration: none;">
 
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="rocket"
             class="svg-inline--fa fa-rocket fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +93,7 @@
               class="fa-primaryx">
             </path>
           </svg>
-          <span class="link-textx">Future Plans</span>
+          <span class="link-textx">Future</span>
         </a>
       </li>
 
@@ -112,7 +109,7 @@
             <path fill="currentColor"
               d="M567.938 243.908L462.25 85.374A48.003 48.003 0 0 0 422.311 64H153.689a48 48 0 0 0-39.938 21.374L8.062 243.908A47.994 47.994 0 0 0 0 270.533V400c0 26.51 21.49 48 48 48h480c26.51 0 48-21.49 48-48V270.533a47.994 47.994 0 0 0-8.062-26.625zM162.252 128h251.497l85.333 128H376l-32 64H232l-32-64H76.918l85.334-128z"
               class="fa-primaryx">
-              
+
             </path>
           </svg>
           <span class="link-textx">Contact</span>
@@ -123,11 +120,11 @@
       </li>
     </ul>
   </nav>
-  <!--End of Nav bar-->
   <!-- Page Content -->
+  
   <main>
     <!--Banner-->
-    <!-- <div class="content" id="banner">
+    <!--<div class="content">
       <div class="content__container">
         <p class="content__container__text">
           Hello
@@ -139,65 +136,47 @@
           <li class="content__container__list__item">everybody !</li>
         </ul>
       </div>
-    </div> -->
-
-    <!--<div class=banner>
-      <div class="ternary-system">
-        <div class="sun primary"></div>
-        <div class="sun secondary"></div>
-        <div class="sun ternary"></div>
-      </div>
-      <div class="sand">
-      <div class="pendulums">
-        <div class="pendulum">
-          <div class="bar"></div>
-          <div class="motion">
-            <div class="string"></div>
-            <div class="weight"></div>
-          </div>
+    </div>-->
+    <div class="banner"id="start">
+      <img src="images/cole_banner-smaller.png" style="image-orientation: from-image;">
+        <div class="row">
+            <h1 style="text-align: center;">Cole Chang</h1>
         </div>
-        <div class="pendulum shadow">
-          <div class="bar"></div>
-          <div class="motion">
-            <div class="string"></div>
-            <div class="weight"></div>
-          </div>
         </div>
-      </div></div>
-      <div class="pyramid"></div>
-      <div class="word">
-        <h1 class="title">Hey It's <strong>Cole Chang</strong><em>Welcome</em></h1>
-        
-      </div>
-    -->
-    </div>
-
     <div class="about" id="aboutid">
-      <div>
-        <h2 style="font-family: jost;">About Me</h2>
-        <Text style="font-family: jost;">Hey! 4th Year Computer Science Student at University of Western Ontario
-          I'm an aspiring Software Engineer hoping to grow. I am always open to learn new things and
-          be apart of new environments. <b>I am actively looking for an internship right now.</b>
-          When I'm not working I'm either enjoying a sport outside or hanging out with friends.
-          If you wanna talk more come hit me up.</Text>
+      <div class="container">
+        <div class="row">
+          <h2 style="font-family: jost;">About Me</h2>
+          <div class="col"></div>
+          <div class="col">
+            <Text style="font-family: jost;" id="aboutText">Hey! 4th Year Computer Science Student at University of
+              Western Ontario
+              I'm an aspiring Software Engineer hoping to grow. I am always open to learn new things and
+              be apart of new environments. <b>I am actively looking for an internship right now.</b>
+              When I'm not working I'm either enjoying a sport outside or hanging out with friends.
+              If you wanna talk more come hit me up.</Text>
+          </div>
+          <div class="col"></div>
+        </div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row"><!--Projects, Future, Contacts-->
       <h1 id="projectHeader">Projects</h1>
       <div class="grid" id="projectid">
 
         <div class="card--container">
-          <div class="cardy"><a href="#">
+          <div class="cardy"><a>
               <div class="card--display"><i class="material-icons">coronavirus</i>
                 <h2>CovidPlot<h2 style="color: white;">whitespaceee</h2>
                 </h2>
               </div>
               <div class="card--hover">
                 <h2>CovidPlot<h2 style="color: white;">whitespaceee</h2>
+                  <h2>C++</h2>
                 </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie
-                  pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.
+                <p>Displays styled and visually appealing graphs based on the most up to date Covid-19 data from the
+                  covid19API.
                 </p>
 
               </div>
@@ -208,16 +187,17 @@
         </div>
 
         <div class="card--container">
-          <div class="cardy"><a href="#">
+          <div class="cardy"><a>
               <div class="card--display"><i class="material-icons">public</i>
-                <h2>Personal Website<h2 style="color: white;">whitespaceee</h2>
+                <h2>Personal Website<h2 style="color: white;font-size: small;">whitespaceeeeeeeeeeeeeeeeeee</h2>
                 </h2>
               </div>
               <div class="card--hover">
-                <h2>Personal Website<h2 style="color: white;">whitespaceee</h2>
+                <h2>Personal Website<h2 style="color: white; font-size: small;">whitespaceeeeeeeeeeeeeeeeeee</h2>
                 </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie
-                  pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.
+                <h3>HTML, CSS, JS</h3>
+                <p>You are looking at it! This is my personal website! Any suggestions or feedback would be greatly
+                  appreciated.
                 </p>
 
               </div>
@@ -228,18 +208,19 @@
         </div>
 
         <div class="card--container">
-          <div class="cardy"><a href="#">
+          <div class="cardy"><a>
               <div class="card--display"><i class="material-icons">line_axis</i>
-                <h2>Berkeley Pacman Pathfinder<h2 style="color: white;">whitespaceee</h2>
+                <h2>Pacman AI<h2 style="color: white;">whitespaceee</h2>
                 </h2>
               </div>
               <div class="card--hover">
-                <h2>Berkeley Pacman Pathfinder<h2 style="color: white;">whitespaceee</h2>
+                <h2>Pacman AI<h2 style="color: white;">whitespaceee</h2>
                 </h2>
-                <p>Utilizing pathfinding algorithms such as A*, Dijkstra, Prims and more. These algorithms are used with consistent and admissible heuristics to assist Pacman in winning the
-                  game, with or without enemies.
+                <h3>Python</h3>
+                <p>With pathfinding algorithms such as A*, Dijkstra etc. These algorithms are used with consistent and
+                  admissible heuristics to assist Pacman in winning the
+                  game, with or without enemies in the most efficient manner.
                 </p>
-
               </div>
             </a>
             <div class="card--border"></div>
@@ -248,7 +229,7 @@
         </div>
 
         <div class="card--container">
-          <div class="cardy card--dark"><a href="#">
+          <div class="cardy card--dark"><a>
               <div class="card--display"><i class="material-icons" id="gamecontroller">sports_esports</i>
                 <h2>Sticky Keys<h2 style="color: black;">whitespaceeee</h2>
                 </h2>
@@ -256,20 +237,19 @@
               <div class="card--hover">
                 <h2>Sticky Keys<h2 style="color: black;">whitespaceeee</h2>
                 </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie
-                  pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.
+                <h2>C++</h2>
+                <p>2DPuzzle game with complex physics and game mechanics, while developing with large codebases and
+                  design patterns.
                 </p>
               </div>
             </a>
             <div class="card--border"></div>
           </div>
-
         </div>
       </div>
 
 
-      <div class="future">
-
+      <div class="future" id="futureid">
         <div class="container" style="padding-top: 30px;">
           <div class="row">
             <h1 class="sectionTitleText" style="font-size: 35px;">Future Plans</h1>
@@ -319,7 +299,6 @@
                       <div class="row">
                         <div class="col-sm-4 icons"><i class="material-icons" style="color: white;">code</i></div>
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -352,7 +331,6 @@
                       <div class="row">
                         <div class="col-sm-4 icons"><i class="material-icons" style="color: white;">code</i></div>
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -375,9 +353,6 @@
       <h2 id="contactHeader">Contact Me</h2>
       <div class="row"><a id="resume" href="Resume+2020-2021+CS.pdf" target="_blank">Resume</a></div>
       <div class="contact" id="contactid">
-
-        <div class="background"></div>
-
         <div class="case">
           <div class="card">
             <div class="face face1">
@@ -432,7 +407,6 @@
             </div>
           </div>
         </div>
-        
       </div>
     </div>
     </div>
