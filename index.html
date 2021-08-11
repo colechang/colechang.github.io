@@ -13,10 +13,22 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
   <a name="top" style="text-align: center;"></a>
+
+  <div class="load-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <script>
+    $(window).on("load", function () {
+      $(".load-wrapper").fadeOut("slow");
+    });
+  </script>
+
   <!-- Navbar -->
   <nav class="navbarx overlay">
     <ul class="navbar-navx">
@@ -121,28 +133,17 @@
     </ul>
   </nav>
   <!-- Page Content -->
-  
+  <div class="banner" id="start">
+    <div class="row">
+      <h1 class="bannerHeader1">Cole Chang</h1>
+      <h2 class="bannerHeader2">Software Engineer | Data Scientist</h2>
+      <img class="img-fluid" id="coleBanner" src="images/cole_banner-smaller.png">
+
+
+    </div>
+  </div>
   <main>
-    <!--Banner-->
-    <!--<div class="content">
-      <div class="content__container">
-        <p class="content__container__text">
-          Hello
-        </p>
-        <ul class="content__container__list">
-          <li class="content__container__list__item">world !</li>
-          <li class="content__container__list__item">i'm Cole !</li>
-          <li class="content__container__list__item">users !</li>
-          <li class="content__container__list__item">everybody !</li>
-        </ul>
-      </div>
-    </div>-->
-    <div class="banner"id="start">
-      <img src="images/cole_banner-smaller.png" style="image-orientation: from-image;">
-        <div class="row">
-            <h1 style="text-align: center;">Cole Chang</h1>
-        </div>
-        </div>
+
     <div class="about" id="aboutid">
       <div class="container">
         <div class="row">
@@ -161,7 +162,8 @@
       </div>
     </div>
 
-    <div class="row"><!--Projects, Future, Contacts-->
+    <div class="row">
+      <!--Projects, Future, Contacts-->
       <h1 id="projectHeader">Projects</h1>
       <div class="grid" id="projectid">
 
