@@ -620,10 +620,6 @@ i {
   font-weight: 300;
 
 }
-
-.sectionTitleText {
-  font-family: "jost";
-}
 #start{
   background: url(images/cole_banner-smaller.png);
   background-size: cover;
@@ -638,6 +634,11 @@ i {
   font-family: "jost";
   font-size: 6vw;
   font-weight: bolder;
+
+}
+#futureHeader{
+  padding-left: 13%;
+  font-family: "jost";
 
 }
 
