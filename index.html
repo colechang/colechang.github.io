@@ -4,26 +4,20 @@
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name = "format-detection" content = "telephone=no">
-		<!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
-		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"/> -->
-		<!-- <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"/> -->
-		<!-- <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet"/> -->
 		
-		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap" rel="stylesheet"> -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 		
 		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
+		<!-- <link rel="manifest" href="/site.webmanifest"> -->
+		<link rel="manifest" href="images/favicon_io/site.webmanifest" crossorigin="use-credentials">
 		<link rel="stylesheet" href="styles.css">
 		
 		
@@ -33,32 +27,36 @@
 				$(".icon").toggleClass("close");
 			});
 		</script>
+		
+		<script>
+			$(document).ready(function(){
+			// Add smooth scrolling to all links
+			$("a").on('click', function(event) {
+
+				if (this.hash !== "") {
+				event.preventDefault();
+
+				// Store hash
+				var hash = this.hash;
+
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+			
+					window.location.hash = hash;
+				});
+				} // End if
+			});
+			});
+		</script>
+		
+
 		<script src="nav.js" defer> </script>
 		<script src="appear_scroll.js" defer> </script>
 		<script src="observer_background.js" defer> </script>
-		<script src="hr-grow.js" defer> </script>
+
 		
-		<script>
-		$(document).ready(function(){
-		// Add smooth scrolling to all links
-		$("a").on('click', function(event) {
 
-			if (this.hash !== "") {
-			event.preventDefault();
-
-			// Store hash
-			var hash = this.hash;
-
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top
-			}, 800, function(){
-		
-				window.location.hash = hash;
-			});
-			} // End if
-		});
-		});
-		</script>
 
 		<meta name="keywords" content="Cole, Cole Chang, Chang, uwo, western, western university, university of western ontario"/>
 	  	<meta name="description" content="Cole Chang, Computer Science graduate from Western University (UWO) aspiring to work as a full-stack engineer or data scientist."/>
@@ -103,14 +101,14 @@
 		<div class="grid">
 			
 			<div id="home" class="box1 cell" >
-				<h1 class="drop-in-2 pad-left" style="text-align: left;">
+				<h1 class="drop-in-2" style="text-align: left;">
 					Full-Stack Engineer|Data Scientist
 				</h1>
 			</div>
 			<div class="box2 cell" style="text-align: center;">
 				
-				<video width="2000" height="1000" autoplay muted loop playsinline poster="images/desk/desk_illustration_bigger_fill_new_subtract3_mask.mp4" class="crisp-img desk-vid drop-in-3">
-					<source src="images/desk/desk_illustration_bigger_fill_new_subtract3_mask.mp4" type="video/mp4">
+				<video width="2000" height="1220" autoplay muted loop playsinline poster="images/desk/ss-0000000000.webp" class="crisp-img desk-vid drop-in-3">
+					<source src="images/desk/desk_illustration_bigger_fill_new_subtract3_mask_crop.mp4" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>
 			</div>
@@ -164,7 +162,7 @@
 				</h2>
 			</div>
 			<div class="box9 cell">
-				<video width="1816" height="1064" loop autoplay muted controls playsinline poster="videos/buzz_kutz_trim_crop.mp4" class="crisp-img work-vid text-clip-left pad-left">
+				<video width="1816" height="1064" loop autoplay muted controls playsinline poster="videos/buzz_kutz_trim_crop_image.webp" class="crisp-img work-vid text-clip-left pad-left">
 					<source src="videos/buzz_kutz_trim_crop.mp4" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>
@@ -187,7 +185,7 @@
 				
 			</div>
 			<div class="box11 cell">
-				<video width="2588" height="1268" loop autoplay muted controls playsinline poster="videos/parking_sim_trim_crop.mp4" class="crisp-img work-vid text-clip-right pad-right">
+				<video width="2588" height="1268" loop autoplay muted controls playsinline poster="videos/parking_sim_trim_crop_image.webp" class="crisp-img work-vid text-clip-right pad-right">
 					<source src="videos/parking_sim_trim_crop.mp4" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>
@@ -212,8 +210,8 @@
 				
 			</div>
 			<div class="box13 cell">
-				<video width="2542" height="1284" loop autoplay muted playsinline poster="videos/BasketballReferenceWebScraper_crop.mp4" class="crisp-img work-vid text-clip-left pad-left">
-					<source src="videos/BasketballReferenceWebScraper_crop.mp4" type="video/mp4">
+				<video width="2542" height="1284" loop autoplay muted playsinline poster="videos/BasketballReferenceWebScraper_crop_mute_image.webp" class="crisp-img work-vid text-clip-left pad-left">
+					<source src="videos/BasketballReferenceWebScraper_crop_mute.mp4" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>
 
@@ -241,7 +239,7 @@
 
 			</div>
 			<div class="box15 cell" style="text-align: center;">
-				<video width="1132" height="1202" loop autoplay muted playsinline poster="videos/AStarSearchPacmanDemo_trim_crop.mp4" class="crisp-img text-clip work-pac-vid pad-left">
+				<video width="1132" height="1202" loop autoplay muted playsinline poster="videos/AStarSearchPacmanDemo_trim_crop_image.webp" class="crisp-img text-clip work-pac-vid work-pac-vid-long pad-left">
 					<source src="videos/AStarSearchPacmanDemo_trim_crop.mp4" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>
@@ -251,7 +249,7 @@
 
 			</div>
 			<div class="box16 cell" style="text-align: center;">
-				<video width="2210" height="1200" loop autoplay muted playsinline poster="videos/BFSSearchAlgorithmPacman_trim_crop.mp4" class="crisp-img text-clip work-pac-vid">
+				<video width="2210" height="1200" loop autoplay muted playsinline poster="videos/BFSSearchAlgorithmPacman_trim_crop_image.webp" class="crisp-img text-clip work-pac-vid">
 					<source src="videos/BFSSearchAlgorithmPacman_trim_crop.mp4" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>
@@ -261,7 +259,7 @@
 
 			</div>
 			<div class="box17 cell" style="text-align: center;">
-				<video width="1250" height="540" loop autoplay muted playsinline poster="videos/MinimaxReflexAgentPacmanDemo_trim_crop.mp4" class="crisp-img text-clip work-pac-vid pad-right">
+				<video width="1250" height="540" loop autoplay muted playsinline poster="videos/MinimaxReflexAgentPacmanDemo_trim_crop_image.webp" class="crisp-img text-clip work-pac-vid pad-right">
 					<source src="videos/MinimaxReflexAgentPacmanDemo_trim_crop.mp4" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>
@@ -284,18 +282,28 @@
 
 			</div>
 			<div class="box19 cell">
-				<img src="images/thesis/metaHumanFigureCropped.png" alt="meta human figure" class="crisp-img meta-human-img text-clip-down pad-left"/>
+				<!-- <img src="images/thesis/metaHumanFigureCropped.webp" alt="MetaHuman figure" class="crisp-img meta-human-img text-clip-down pad-left"/> -->
+				<img srcset="images/thesis/metaHumanFigureCropped_256.webp 256w, images/thesis/metaHumanFigureCropped.webp 585w, images/thesis/metaHumanFigureCropped_750.webp 750w, images/thesis/metaHumanFigureCropped_990.webp 990w, images/thesis/metaHumanFigureCropped_1190.webp 1190w, images/thesis/metaHumanFigureCropped_1350.webp 1350w, images/thesis/metaHumanFigureCropped_1500.webp 1500w" 
+				sizes="(min-width: 1220px) 25vw, 45vw"
+				src="images/thesis/metaHumanFigureCropped.webp" alt="MetaHuman figure" class="crisp-img meta-human-img text-clip-down pad-left">
 				<h4 class="work-sub-text text-clip-down pad-left">
 					MetaHuman character rigged
 				</h4>
 
 			</div>
 			<div class="box20 cell">
-				<img src="images/thesis/Highres_human.png" alt="close up MetaHuman face" class="crisp-img human-close-img text-clip-down pad-right"/>
+				<!-- <img src="images/thesis/Highres_human.webp" alt="close up MetaHuman face" class="crisp-img human-close-img text-clip-down pad-right"/> -->
+				<img srcset="images/thesis/Highres_human_270.webp 270w, images/thesis/Highres_human_1300.webp 1300w, images/thesis/Highres_human_1820.webp 1820w, images/thesis/Highres_human_2230.webp 2230w, images/thesis/Highres_human.webp 2564w" 
+				sizes="(min-width: 1220px) 52vw, 90vw"
+				src="images/thesis/Highres_human.webp" alt="close up MetaHuman face" class="crisp-img human-close-img text-clip-down pad-right">
 
 			</div>
 			<div class="box21 cell">
-				<img src="images/thesis/lod.jpg" alt="level of detail of MetaHumans" class="crisp-img lod-img text-clip-down pad-right"/>
+				<!-- <img src="images/thesis/lod.webp" alt="level of detail of MetaHumans" class="crisp-img lod-img text-clip-down pad-right"/> -->
+				<img srcset="images/thesis/lod_270.webp 270w, images/thesis/lod_1410.webp 1410w, images/thesis/lod_1970.webp 1970w, images/thesis/lod_2400.webp 2400w, images/thesis/lod_2770.webp 2770w, images/thesis/lod.webp 3096w" 
+				sizes="(min-width: 1220px) 52vw, 90vw"
+				src="images/thesis/lod.webp" alt="level of detail of MetaHumans" class="crisp-img lod-img text-clip-down pad-right">
+				
 				<h4 class="work-sub-text text-clip-down pad-right">
 					Level of detail (LOD) of MetaHumans
 				</h4>
@@ -321,7 +329,11 @@
 				
 			</div>
 			<div class="box23 cell">
-				<img src="images/raytracerimage.png" alt="Ray tracer balls" class="crisp-img ray-img text-clip"/>
+				<!-- <img src="images/raytracerimage.webp" alt="Ray traced balls" class="crisp-img ray-img text-clip"/> -->
+				<img srcset="images/raytracerimage_270.webp 270w, images/raytracerimage_920.webp 920w, images/raytracerimage.webp 1279w, images/raytracerimage_1580.webp 1580w, images/raytracerimage_1830.webp 1830w, images/raytracerimage_2048.webp 2048w" 
+				sizes="(min-width: 1220px) 40vw, 90vw"	
+				src="images/raytracerimage.webp" alt="Ray traced balls" class="crisp-img ray-img text-clip">
+				
 
 			</div>
 			<div class="box24 cell">
@@ -344,7 +356,7 @@
 				<h2 class="heading-text text-clip text-change pad-left">
 					Contact Me
 				</h2>
-				<h4 class="work-text text-clip text-change pad-left" style="margin-bottom: 2em;">
+				<h4 class="contact-sub-text text-clip text-change pad-left" style="margin-bottom: 2em;">
 					Let's get in touch
 				</h4>
 

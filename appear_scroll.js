@@ -1,4 +1,4 @@
-const growers = document.querySelectorAll(".grow-trans");
+// const growers = document.querySelectorAll(".grow-trans");
 const fills = document.querySelectorAll(".text-clip");
 const leftFills = document.querySelectorAll(".text-clip-left");
 const rightFills = document.querySelectorAll(".text-clip-right");
@@ -6,7 +6,7 @@ const downFills = document.querySelectorAll(".text-clip-down");
 const colors = document.querySelectorAll(".background-change");
 
 const textColors = document.querySelectorAll(".text-change");
-const sliders = document.querySelectorAll(".slide");
+// const sliders = document.querySelectorAll(".slide");
 
 const appearOptions = {
     threshold: 0
@@ -25,9 +25,9 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
     });
 }, appearOptions);
 
-growers.forEach(grower => {
-    appearOnScroll.observe(grower);
-});
+// growers.forEach(grower => {
+//     appearOnScroll.observe(grower);
+// });
 
 fills.forEach(fill => {
     appearOnScroll.observe(fill);
@@ -49,6 +49,6 @@ textColors.forEach(tcolor => {
     appearOnScroll.observe(tcolor);
 });
 
-sliders.forEach(slider => {
-    appearOnScroll.observe(slider);
-});
+// sliders.forEach(slider => {
+//     appearOnScroll.observe(slider);
+// });
